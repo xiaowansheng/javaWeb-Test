@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    align-items: center;
+    height: 420px;
+}
+
+main .title{
+    padding-bottom: 50px;
+}

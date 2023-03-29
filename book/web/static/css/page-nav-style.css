@@ -1,0 +1,30 @@
+main .paging-nav ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main .paging-nav ul li{
+    margin: 15px 10px;
+    /* vertical-align: middle; */
+}
+
+main .paging-nav ul .page{
+    padding: 5px 15px;
+}
+
+main .paging-nav ul input[type="text"]{
+    width: 50px;
+    padding-top: 5px;
+    line-height: 18px;
+    font-size: 18px;
+    text-align: center;
+}
+
+main .paging-nav ul a:hover{
+    color: skyblue;
+}
+
+main .paging-nav ul a:active{
+    color: blue;
+}

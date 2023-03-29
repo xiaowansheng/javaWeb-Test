@@ -1,0 +1,6 @@
+mysql -uroot -p2019;
+mysql> create database book;
+mysql> use book;
+mysql> create tb_users(username varchar(12) primary key,password varchar(12),email varchar(30));
+mysql> create table tb_users(id int primary key auto_increment,username varchar(12) not null unique,password varchar(12) not null,email varchar(30) not null);
+mysql> insert into tb_users(username,password,email)values("admin","admin","admin@qq.com");

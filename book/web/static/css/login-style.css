@@ -1,0 +1,80 @@
+main .login{
+    background-color:white;
+    margin: 60px 0;
+    padding: 0 20px;
+}
+
+main .main-login>.title{
+    font-size: 35px;
+}
+
+.login .member{
+    margin: 30px 0 10px 0;
+    line-height: 35px;
+}
+
+.login .member .title{
+    float: left;
+    font-size: 25px;
+}
+
+.login .member .register{
+    float: right;
+}
+
+.login .member .register a{
+    color: red;
+}
+
+.login .reminder{
+    background-color: rgb(255, 246, 210);
+    padding: 3px 10px;
+    font-size: 16px;
+}
+
+.login .reminder img{
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 20px;
+}
+
+.login form{
+    padding: 10px 0;
+    font-size: 20px;
+    /* line-height: 25px; */
+}
+
+.login form div{
+    padding: 10px 0;
+}
+
+.login form input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.login form .btn-login{
+    text-align: center;
+}
+
+.login form .btn-login input{
+    color: #fff;
+    background-color: rgb(57, 152, 124);
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 0;
+    border: 0;
+    outline-style: none;
+}
+
+.login form .btn-login input:hover{
+    background-color: rgb(107, 162, 144);
+    color: rgb(187, 181, 181);
+}
+
+.login form .btn-login input:active{
+    background-color: rgb(107, 162, 144);
+    color: rgb(132, 126, 126);
+}

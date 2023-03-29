@@ -1,0 +1,31 @@
+header .ico{
+    display: flex;
+    align-items: center;
+}
+
+header .title{
+    font-size: 70px;
+}
+
+header .nav{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 420px;
+    /* background-color: rosybrown; */
+}
+
+
+header .nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav a{
+    color: skyblue;
+    font-size: 30px;
+}
+
+main .main-common{
+    height: 480px;
+}

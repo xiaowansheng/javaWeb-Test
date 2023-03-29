@@ -1,0 +1,65 @@
+main{
+    background-image: url("../img/mainBackground.jpg");
+    background-position: center;
+}
+main .main-common{
+    /* height: 460px; */
+    width: 1200px;
+}
+
+main .order{
+    padding: 54px 0;
+    font-size: 23px;
+}
+
+main .orders{
+    border:2px solid gray;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+main table th,
+main table td{
+    width: 150px;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+main table th{
+    font-weight: bold;
+}
+
+header .nav{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+header .nav ul{
+    display: flex;
+    font-size: 20px;
+}
+
+header .nav ul li:first-child{
+    line-height: 17px;
+}
+
+header .nav ul li a{
+    margin: 0 8px;
+    color:skyblue;
+}
+
+header .nav li span{
+    font-size: 25px;
+    color: red;
+}
+
+header .ico{
+    display: flex;
+    align-items: center;
+}
+
+header .ico .title{
+    font-size: 65px;
+    margin-left: 15px;
+}

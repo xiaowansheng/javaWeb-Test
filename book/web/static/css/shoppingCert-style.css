@@ -1,0 +1,97 @@
+header .ico{
+    display: flex;
+    align-items: center;
+}
+header .title{
+    font-size: 70px;
+    margin-left: 15px;
+}
+
+header .nav{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+header .nav ul{
+    display: flex;
+    font-size: 23px;
+}
+
+header .nav ul li:first-child{
+    line-height: 17px;
+}
+
+header .nav ul li a{
+    margin: 0 8px;
+    color:skyblue;
+}
+
+header .nav li span{
+    font-size: 25px;
+    color: red;
+}
+/*======*/
+
+main .book{
+    background-color:rgba(135, 206, 235,0.5);
+    /* opacity: 0.5; */
+    margin: 35px 0;
+}
+
+main .book table th,
+main .book table td{
+    width: 145px;
+    text-align: center;
+    padding: 15px 10px;
+}
+main .book table td{
+    border-bottom: 1px rgb(102, 102, 120) solid;
+}
+
+main .book table th{
+    font-size: 25px;
+}
+
+main .book table td{
+    font-size: 20px;
+}
+
+main .book .books{
+    border: 2px rgb(102, 102, 120) solid ;
+}
+
+main .book .books{
+    height: 300px;
+    overflow-y: auto;
+}
+
+main .book .twoTh{
+    padding-left: 90px;
+}
+
+.payment{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.payment div,
+.payment a{
+    font-size: 20px;
+    margin: 10px 40px 10px 0;
+    /* margin-right: ; */
+}
+
+.payment div{
+    color: rgb(64, 64, 64);
+}
+
+.payment #payment{
+    font-size: 22px;
+    color: red;
+}
+
+.payment span{
+    color: red;
+    font-size: 22px;
+}

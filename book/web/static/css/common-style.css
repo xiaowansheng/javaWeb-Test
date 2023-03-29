@@ -1,0 +1,38 @@
+header{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+header .ico img{
+    height: 82px;
+    width: 180px;
+
+}
+
+main{
+    /* background-color: darksalmon; */
+    background-image: url("../img/mainBackground.jpg");
+    background-position: center;
+    /* padding: 60px 0; */
+}
+
+main .main-common{
+    width: 1200px;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+main .title{
+    margin: auto 0;
+}
+
+main .main-common>.title{
+    font-size: 35px;
+}
+
+footer{
+    padding-top: 10px;
+    text-align: center;
+}

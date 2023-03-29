@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+    <script type="text/javascript">
+        var json={
+            "key1":2123,
+            "key2":true,
+            "key3":"值",
+            "数组":[1,2,3],
+            "json2":{
+                "key4":5
+            }
+        };
+/*        alert(json.key1);
+        alert(json.key3);
+        alert(json.json2.key4);*/
+        var jsonString=JSON.stringify(json);
+        alert(jsonString);
+        var json2=JSON.parse(jsonString);
+        alert(json2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

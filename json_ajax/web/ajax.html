@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+		<script type="text/javascript">
+			//在这里使用javaS语言发起Ajax请求，访问服务器AjaxServlet中的javaSAjax
+			function ajaxRequest() {
+// 				1、我们首先要创建XMLHttpRequest 
+				var xmlHttpRequest=new XMLHttpRequest();
+// 				2、调用open方法设置请求参数
+				xmlHttpRequest.open("Get","http://localhost:8080/json_ajax/ajax?action=javaScriptAjax",true);
+// 				4、在send方法前绑定onreadystatechange事件，处理请求完成后的操作。
+				xmlHttpRequest.onreadystatechange=function () {
+					if(xmlHttpRequest.readyState==4&&xmlHttpRequest.status==200) {
+						//document.getElementById("div01").innerText=xmlHttpRequest.responseText;
+						// alert(xmlHttpRequest.responseText);
+						var jsonObj=JSON.parse(xmlHttpRequest.responseText);
+						// alert(jsonObj);
+						// var jsonObj={"name":"憨憨","sex":'男',"age":20};
+						document.getElementById("div01").innerText = "姓名：" + jsonObj.name + "，性别：" + jsonObj.sex + "，年龄：" + jsonObj.age;
+					}
+				}
+// 				//3、调用send方法发送请求
+				xmlHttpRequest.send();
+			}
+
+			$(function () {
+				$("#btn").click(function () {
+					// alert("hh");
+					$.ajax({
+						url:"http://localhost:8080/json_ajax/ajax?action=javaScriptAjax",
+						data:"action=jqueryAjax",
+						type:"GET",
+						success:function (data) {
+							$("#div02").innerText=data;
+						},
+						dataType:"json"
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>	
+		<button onclick="ajaxRequest()">ajax request</button>
+		<div id="div01">
+		</div>
+		<button id="btn">jquery Ajax</button>
+		<div id="div02">
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+main{
+    line-height: 420px;
+    height: 460px;
+}
+
+main .title a{
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+main .title a:active{
+    color: brown;
+}

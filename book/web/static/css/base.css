@@ -1,0 +1,20 @@
+body{
+    font-size: 16px;
+    color: #666666;
+}
+
+/* 解决高度塌陷和外边距重叠 */
+.clearfix::after,.clearfix::before{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* 去除超链接下划线 */
+a{
+    text-decoration: none;
+}
+
+.w{
+    margin: 0 auto;
+}

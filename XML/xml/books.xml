@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    xml文件声明
+    版本
+    编码
+-->
+<books>
+    <book sn="a1001">
+        <name>java入门到放弃</name>
+        <author>不知道</author>
+        <price>79</price>
+    </book>
+    <book sn="a1002">
+        <name>时间简史</name>
+        <author>霍金</author>
+        <price>28</price>
+    </book>
+</books>

@@ -1,0 +1,36 @@
+main .book{
+    background-color:rgba(135, 206, 235,0.5);
+    /* opacity: 0.5; */
+    margin: 35px 0;
+}
+
+main .book table th,
+main .book table td{
+    width: 145px;
+    text-align: center;
+    padding: 15px 10px;
+}
+main .book table td{
+    border-bottom: 1px rgb(102, 102, 120) solid;
+}
+
+main .book table th{
+    font-size: 25px;
+}
+
+main .book table td{
+    font-size: 20px;
+}
+
+main .book .books{
+    border: 2px rgb(102, 102, 120) solid ;
+}
+
+main .book .books{
+    height: 300px;
+    overflow-y: auto;
+}
+
+main .book .twoTh{
+    padding-left: 90px;
+}
